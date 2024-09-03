@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <style>
+     body {
+        background-image: linear-gradient(to right, indianred, indianred, indianred, red, indianred, indianred, indianred);
+        font-family: cursive;
+        color: darkred;
+     }
+    </style>
+</head>
+<body> 
+   <center> 
+    <h1 id="heading"></h1>
+    <p id="paragraph"></p>
+    <h1 id="sec"></h1>
+    <h2 id="asin"></h2>
+    <p id="paragraph2"></p>
+    <p id="paragraph3"></p>
+   </center> 
+ <script>
+  var student = {name: "Ram", age: 15, grade: 1, };
+  document.getElementById("heading").innerHTML = "Student details";
+  document.getElementById("paragraph").innerHTML = "<b>" + student.name + "</b>:" + "<br> Age: " + student.age + "<br>Grade: " + student.grade
+  document.getElementById("sec").innerHTML = "Trigonometric values";
+  document.getElementById("paragraph2").innerHTML = "<h2>Asin of:</h2><br>1 = " + Math.asin(1) + " or π/2" 
+                                                          + "<br>0 = " + Math.asin(0)
+                                                          + "<br>-1 = " + Math.asin(-1) + " or -π/2";
+  document.getElementById("paragraph3").innerHTML = "<h2>Acos of:</h2><br>1 = " + Math.acos(1)
+                                                          + "<br>0 = " + Math.acos(0) + " or π/2"
+                                                          + "<br>-1 = " + Math.acos(-1) + " or π";
+
+  
+
+ </script>
+</body>
+</html>
