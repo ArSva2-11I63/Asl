@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Array</title>
+    <title>Sortng</title>
 </head>
 <body>
+    <button onclick="myFunction()">Click</button>
+    <button onclick="newFunction()">Ckicl</button>
+    <p id="my"></p>
+    <p id="my2"></p>
  <script>
-  var fruits = ["Apple", "Orange", "Banana", "Mango", "Grapes"];
-  document.write("<br>");
+  var num = [12, 26, 45, 89, 39, 63]
 
-  document.write(fruits.join(", "));
-  document.write("<br>");
-  document.write(fruits.pop());
+  function myFunction() {
+    document.getElementById("my").innerHTML = num.sort(function(a, b) {return a-b})
+ }
+  function newFunction() {
+    document.getElementById("my2").innerHTML = num.sort(function(a, b) {return b-a})
+  }
   
-  function add(a, b){
-    return a + b
-  };
+  function funcTions(a) {
+    return a * 34
+  }
+   var x = num.map(funcTions);
+   document.write("<br>" + x)
 
-  document.write("<br>");
-  document.write(add(31, 74))
-
-  function average(a, b){
-    return add(a, b)/2
-  };
-
-  document.write("<br>");
-  document.write(average(31, 74));
-
+  var b = 12
+  var c = 13
+  var d = eval(b * c)
+  document.write("<br>" + d)
   
   
 
- 
- </script>   
+</script>   
 </body>
 </html>
